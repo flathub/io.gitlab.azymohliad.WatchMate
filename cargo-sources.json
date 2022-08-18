@@ -9,7 +9,8 @@
         "type": "git",
         "url": "https://github.com/gtk-rs/gtk4-rs",
         "commit": "fcf8682ba32ffb9465257c4d7d1ab1f56fb322ca",
-        "dest": "flatpak-cargo/git/gtk4-rs-fcf8682"
+        "dest": "flatpak-cargo/git/gtk4-rs-fcf8682",
+        "disable-shallow-clone": true
     },
     {
         "type": "git",
