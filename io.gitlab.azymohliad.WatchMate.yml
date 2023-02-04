@@ -12,7 +12,7 @@ finish-args:
   - --device=dri                          # Hardware acceleration
   - --socket=wayland                      # Wayland
   - --socket=fallback-x11                 # X11
-  - --socket=session-bus                  # Notifications propagation
+  # - --socket=session-bus                  # Notifications propagation
   - --system-talk-name=org.bluez          # Bluetooth
   - --talk-name=org.mpris.MediaPlayer2.*  # Media player control
 modules:
