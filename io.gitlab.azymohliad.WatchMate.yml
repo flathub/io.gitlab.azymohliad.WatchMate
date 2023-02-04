@@ -1,6 +1,6 @@
 id: io.gitlab.azymohliad.WatchMate
 runtime: org.gnome.Platform
-runtime-version: '42'
+runtime-version: '43'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -8,12 +8,13 @@ command: watchmate
 finish-args:
   - --allow=bluetooth
   - --share=ipc
-  - --share=network
-  - --device=dri
-  - --socket=wayland
-  - --socket=fallback-x11
-  - --system-talk-name=org.bluez
-  - --talk-name=org.mpris.MediaPlayer2.*
+  - --share=network                       # Download firmware releases
+  - --device=dri                          # Hardware acceleration
+  - --socket=wayland                      # Wayland
+  - --socket=fallback-x11                 # X11
+  # - --socket=session-bus                  # Notifications propagation
+  - --system-talk-name=org.bluez          # Bluetooth
+  - --talk-name=org.mpris.MediaPlayer2.*  # Media player control
 modules:
   - name: watchmate
     buildsystem: simple
@@ -31,7 +32,7 @@ modules:
       - install -Dm 644 assets/icons/${FLATPAK_ID}-symbolic.svg -t /app/share/icons/hicolor/symbolic/apps
     sources:
       - type: git
-        url: https://gitlab.com/azymohliad/watchmate
-        commit: 7322b20d9e636f7ccb707ea1deb0d2cffa800a20
-        tag: v0.3.0
+        url: https://github.com/azymohliad/watchmate
+        commit: 0467878f1f7457861ef8aa9f95a58f31268655ef
+        tag: v0.4.0
       - cargo-sources.json
