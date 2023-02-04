@@ -33,6 +33,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/azymohliad/watchmate
-        commit: d8a646ee608e45e71c2b51fe8406b9d1d60a55d4
+        commit: d2537ab58eb2b467bdb2afe0caa46c2c4662522a
         tag: v0.4.0
       - cargo-sources.json
