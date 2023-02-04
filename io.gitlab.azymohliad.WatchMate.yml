@@ -32,7 +32,7 @@ modules:
       - install -Dm 644 assets/icons/${FLATPAK_ID}-symbolic.svg -t /app/share/icons/hicolor/symbolic/apps
     sources:
       - type: git
-        url: https://gitlab.com/azymohliad/watchmate
-        commit: 7322b20d9e636f7ccb707ea1deb0d2cffa800a20
+        url: https://github.com/azymohliad/watchmate
+        commit: d8a646ee608e45e71c2b51fe8406b9d1d60a55d4
         tag: v0.4.0
       - cargo-sources.json
