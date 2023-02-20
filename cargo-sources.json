@@ -2386,40 +2386,40 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/relm4/relm4-0.5.0-rc.1.crate",
-        "sha256": "775146054bd0dd0e719b882efadeb5d7372e7fdeb69779b2e137937fc679d62c",
-        "dest": "cargo/vendor/relm4-0.5.0-rc.1"
+        "url": "https://static.crates.io/crates/relm4/relm4-0.5.0.crate",
+        "sha256": "67d336a752868ac036d994ff051a02dc8c1b53173980e5fce16dfb580f458d95",
+        "dest": "cargo/vendor/relm4-0.5.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"775146054bd0dd0e719b882efadeb5d7372e7fdeb69779b2e137937fc679d62c\", \"files\": {}}",
-        "dest": "cargo/vendor/relm4-0.5.0-rc.1",
+        "contents": "{\"package\": \"67d336a752868ac036d994ff051a02dc8c1b53173980e5fce16dfb580f458d95\", \"files\": {}}",
+        "dest": "cargo/vendor/relm4-0.5.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/relm4-components/relm4-components-0.5.0-rc.1.crate",
-        "sha256": "799b4589101c6a6975128bec378de63ea2a85d80465c6f133493e5fd0925649d",
-        "dest": "cargo/vendor/relm4-components-0.5.0-rc.1"
+        "url": "https://static.crates.io/crates/relm4-components/relm4-components-0.5.0.crate",
+        "sha256": "5903c6260efa42847589a938429eaf6925d0cf9b07776895cba0f768bb5b4c8f",
+        "dest": "cargo/vendor/relm4-components-0.5.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"799b4589101c6a6975128bec378de63ea2a85d80465c6f133493e5fd0925649d\", \"files\": {}}",
-        "dest": "cargo/vendor/relm4-components-0.5.0-rc.1",
+        "contents": "{\"package\": \"5903c6260efa42847589a938429eaf6925d0cf9b07776895cba0f768bb5b4c8f\", \"files\": {}}",
+        "dest": "cargo/vendor/relm4-components-0.5.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/relm4-macros/relm4-macros-0.5.0-rc.1.crate",
-        "sha256": "61467ebc57ae11ec196fc851e7f976d17b5ec29ed293db5cbc8a3781fb2b1f06",
-        "dest": "cargo/vendor/relm4-macros-0.5.0-rc.1"
+        "url": "https://static.crates.io/crates/relm4-macros/relm4-macros-0.5.0.crate",
+        "sha256": "aaf49f6588ecac70fd6163110ed7e294195cc5c9c82efb7b3150b9ca87486a72",
+        "dest": "cargo/vendor/relm4-macros-0.5.0"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"61467ebc57ae11ec196fc851e7f976d17b5ec29ed293db5cbc8a3781fb2b1f06\", \"files\": {}}",
-        "dest": "cargo/vendor/relm4-macros-0.5.0-rc.1",
+        "contents": "{\"package\": \"aaf49f6588ecac70fd6163110ed7e294195cc5c9c82efb7b3150b9ca87486a72\", \"files\": {}}",
+        "dest": "cargo/vendor/relm4-macros-0.5.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
