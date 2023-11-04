@@ -2021,6 +2021,12 @@
     },
     {
         "type": "inline",
+        "contents": "[package]\nname = \"mpris2-zbus\"\ndescription = \"zbus-based bindings for MPRIS2 (Media Player Remote Interfacing Specification) on Linux\"\nversion = \"0.1.0\"\nedition = \"2021\"\nlicense = \"MPL-2.0\"\n\n[dependencies]\nthiserror = \"1.0\"\nzbus = \"3.7\"\nzvariant = \"3.10\"\n\n[dependencies.serde]\nversion = \"1.0\"\nfeatures = [ \"derive\",]\n\n[dependencies.time]\nversion = \"0.3\"\nfeatures = [ \"parsing\",]\n\n[dev-dependencies.miette]\nversion = \"4.3\"\nfeatures = [ \"fancy\",]\n\n[dev-dependencies.tokio]\nversion = \"1\"\nfeatures = [ \"full\",]\n",
+        "dest": "cargo/vendor/mpris2-zbus",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
         "contents": "{\"package\": null, \"files\": {}}",
         "dest": "cargo/vendor/mpris2-zbus",
         "dest-filename": ".cargo-checksum.json"
@@ -2579,6 +2585,12 @@
     },
     {
         "type": "inline",
+        "contents": "[[bench]]\nname = \"stress_test\"\nharness = false\n\n[[example]]\nname = \"simple\"\npath = \"examples/simple.rs\"\ndoc-scrape-examples = true\n\n[package]\nname = \"relm4\"\ndocumentation = \"https://docs.rs/relm4/\"\nversion = \"0.7.0-beta.2\"\nauthors = [ \"Aaron Erhardt <aaron.erhardt@t-online.de>\",]\nedition = \"2021\"\nrust-version = \"1.65\"\nreadme = \"README.md\"\nlicense = \"Apache-2.0 OR MIT\"\ndescription = \"An idiomatic GUI library inspired by Elm and based on gtk4-rs\"\nhomepage = \"https://relm4.org\"\nrepository = \"https://github.com/Relm4/Relm4\"\nkeywords = [ \"gui\", \"gtk\", \"gtk4\", \"elm\",]\ncategories = [ \"gui\",]\n\n[features]\ndefault = [ \"macros\", \"gnome_42\",]\nlibadwaita = [ \"adw\",]\nmacros = [ \"relm4-macros\",]\ngnome_45 = [ \"gnome_44\", \"gtk/gnome_45\", \"adw/v1_4\",]\ngnome_44 = [ \"gnome_43\", \"gtk/gnome_44\", \"adw/v1_3\",]\ngnome_43 = [ \"gnome_42\", \"gtk/gnome_43\", \"adw/v1_2\",]\ngnome_42 = [ \"gtk/gnome_42\",]\nall = [ \"macros\", \"libadwaita\",]\n\n[dependencies]\nflume = \"0.11.0\"\nfutures = \"0.3.28\"\nfragile = \"2.0.0\"\nonce_cell = \"1.18\"\ntracing = \"0.1.37\"\nasync-trait = \"0.1.68\"\n\n[dev-dependencies]\nrand = \"0.8.5\"\ntracker = \"0.2\"\nreqwest = \"0.11.18\"\ntracing-subscriber = \"0.3.17\"\nserde_json = \"1\"\n\n[dependencies.adw]\nversion = \"0.5\"\noptional = true\npackage = \"libadwaita\"\n\n[dependencies.gtk]\nversion = \"0.7\"\npackage = \"gtk4\"\n\n[dependencies.tokio]\nversion = \"1.28\"\nfeatures = [ \"rt\", \"rt-multi-thread\", \"sync\",]\n\n[dependencies.relm4-macros]\nversion = \"0.7.0-alpha.1\"\npath = \"../relm4-macros\"\noptional = true\n\n[dev-dependencies.relm4-macros]\npath = \"../relm4-macros\"\n\n[dev-dependencies.criterion]\nversion = \"0.5\"\ndefault-features = false\n\n[dev-dependencies.relm4-icons]\ngit = \"https://github.com/Relm4/icons\"\nfeatures = [ \"plus\", \"minus\", \"tag-outline-add\", \"delete-filled\",]\n\n[dev-dependencies.relm4-components]\npath = \"../relm4-components\"\n\n[dev-dependencies.tokio]\nversion = \"1.28\"\nfeatures = [ \"rt\", \"macros\", \"time\", \"rt-multi-thread\",]\n\n[dev-dependencies.serde]\nversion = \"1\"\nfeatures = [ \"derive\", \"default\",]\n\n[package.metadata.docs.rs]\nall-features = true\nrustc-args = [ \"--cfg\", \"docsrs\",]\ncargo-args = [ \"-Zunstable-options\", \"-Zrustdoc-scrape-examples\",]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\n",
+        "dest": "cargo/vendor/relm4",
+        "dest-filename": "Cargo.toml"
+    },
+    {
+        "type": "inline",
         "contents": "{\"package\": null, \"files\": {}}",
         "dest": "cargo/vendor/relm4",
         "dest-filename": ".cargo-checksum.json"
@@ -2588,6 +2600,12 @@
         "commands": [
             "cp -r --reflink=auto \"flatpak-cargo/git/relm4-7ca06e9/relm4-components\" \"cargo/vendor/relm4-components\""
         ]
+    },
+    {
+        "type": "inline",
+        "contents": "[[example]]\nname = \"web_image\"\nrequired-features = [ \"web\",]\n\n[[example]]\nname = \"adw_combo_row\"\nrequired-features = [ \"libadwaita\",]\n\n[package]\nname = \"relm4-components\"\nreadme = \"README.md\"\ndocumentation = \"https://docs.rs/relm4_components/\"\nversion = \"0.7.0-beta.2\"\nauthors = [ \"Aaron Erhardt <aaron.erhardt@t-online.de>\",]\nedition = \"2021\"\nrust-version = \"1.65\"\nlicense = \"Apache-2.0 OR MIT\"\ndescription = \"An idiomatic GUI library inspired by Elm and based on gtk4-rs\"\nhomepage = \"https://relm4.org\"\nrepository = \"https://github.com/Relm4/Relm4\"\nkeywords = [ \"gui\", \"gtk\", \"gtk4\", \"elm\",]\ncategories = [ \"gui\",]\n\n[dependencies]\nonce_cell = \"1.18\"\ntracker = \"0.2.1\"\n\n[features]\ndefault = [ \"libadwaita\",]\ndox = [ \"web\",]\nweb = [ \"reqwest\",]\nlibadwaita = [ \"relm4/libadwaita\",]\n\n[dependencies.relm4]\nversion = \"0.7.0-alpha.1\"\npath = \"../relm4\"\ndefault-features = false\nfeatures = [ \"macros\",]\n\n[dependencies.reqwest]\nversion = \"0.11.18\"\noptional = true\n\n[package.metadata.docs.rs]\nall-features = true\nrustc-args = [ \"--cfg\", \"docsrs\",]\ncargo-args = [ \"-Zunstable-options\", \"-Zrustdoc-scrape-examples\",]\n",
+        "dest": "cargo/vendor/relm4-components",
+        "dest-filename": "Cargo.toml"
     },
     {
         "type": "inline",
@@ -2613,6 +2631,12 @@
         "commands": [
             "cp -r --reflink=auto \"flatpak-cargo/git/relm4-7ca06e9/relm4-macros\" \"cargo/vendor/relm4-macros\""
         ]
+    },
+    {
+        "type": "inline",
+        "contents": "[package]\nname = \"relm4-macros\"\nreadme = \"README.md\"\nkeywords = [ \"gui\", \"gtk\", \"gtk4\", \"elm\", \"view\",]\ndocumentation = \"https://docs.rs/relm4_macros/\"\nversion = \"0.7.0-beta.2\"\nauthors = [ \"Aaron Erhardt <aaron.erhardt@t-online.de>\",]\nedition = \"2021\"\nrust-version = \"1.65\"\nlicense = \"Apache-2.0 OR MIT\"\ndescription = \"An idiomatic GUI library inspired by Elm and based on gtk4-rs\"\nhomepage = \"https://relm4.org\"\nrepository = \"https://github.com/Relm4/Relm4\"\ncategories = [ \"gui\",]\n\n[lib]\nproc-macro = true\n\n[features]\ndefault = [ \"relm4\",]\nrelm4 = []\n\n[dependencies]\nproc-macro2 = \"1.0\"\nquote = \"1.0\"\n\n[dev-dependencies]\nrustversion = \"1\"\ntrybuild = \"1.0.80\"\n\n[dependencies.syn]\nversion = \"2.0\"\nfeatures = [ \"full\", \"extra-traits\", \"visit\", \"visit-mut\",]\n\n[dev-dependencies.relm4]\npath = \"../relm4\"\n",
+        "dest": "cargo/vendor/relm4-macros",
+        "dest-filename": "Cargo.toml"
     },
     {
         "type": "inline",
