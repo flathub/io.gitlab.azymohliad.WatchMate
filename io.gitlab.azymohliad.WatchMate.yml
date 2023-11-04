@@ -1,6 +1,6 @@
 id: io.gitlab.azymohliad.WatchMate
 runtime: org.gnome.Platform
-runtime-version: '44'
+runtime-version: '45'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -28,11 +28,13 @@ modules:
       - install -Dm 755 target/release/watchmate -t /app/bin
       - install -Dm 644 assets/${FLATPAK_ID}.desktop -t /app/share/applications
       - install -Dm 644 assets/${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo
+      - install -Dm 644 assets/${FLATPAK_ID}.gschema.xml -t /app/share/glib-2.0/schemas
       - install -Dm 644 assets/icons/${FLATPAK_ID}.svg -t /app/share/icons/hicolor/scalable/apps
       - install -Dm 644 assets/icons/${FLATPAK_ID}-symbolic.svg -t /app/share/icons/hicolor/symbolic/apps
+      - glib-compile-schemas /app/share/glib-2.0/schemas
     sources:
       - type: git
         url: https://github.com/azymohliad/watchmate
-        commit: 3fb3fa89fc76a783f46abdc5f07e9a59ed23ac1f
-        tag: v0.4.5
+        commit: 7ef254110b8491624962fd0f269abbd2a22584fd
+        tag: v0.5.0
       - cargo-sources.json
