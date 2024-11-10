@@ -1,6 +1,6 @@
 id: io.gitlab.azymohliad.WatchMate
 runtime: org.gnome.Platform
-runtime-version: '45'
+runtime-version: '47'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -35,6 +35,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/azymohliad/watchmate
-        commit: 27bfabcc7fcc1a42b828c8b7579b2a184bc3bf35
-        tag: v0.5.2
+        commit: f49836f9df37e42aea27012bb6fd976a787ec428
+        tag: v0.5.3
       - cargo-sources.json
